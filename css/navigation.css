@@ -15,7 +15,7 @@
     justify-content: center;
 }
  
-.navi-center img{
+.navi img{
     width: auto;
     height:50px;
     padding-left: 15px;
@@ -49,13 +49,3 @@
     display: flex;
     justify-content: end;
 }
-
-
-    
-    
-
-
-
-
-
-

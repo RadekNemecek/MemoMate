@@ -92,6 +92,39 @@ body {
 
     .cards li {
         max-width: none;
-        width: 80%; /* Každý li zabírá 100% šířky rodiče ul */
+        width: 80%; 
     }
+}
+
+/*css pro custom card*/
+
+.onTopWindow{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.onTopWindow-content{
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close{
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: black;
+    cursor: pointer;
 }

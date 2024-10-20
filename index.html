@@ -15,8 +15,8 @@
 <body>
     <header class="navi">
         <div class="navi-left">
-            <input type="text" id="inputTitle" placeholder="sem dej nadpis">
-
+            <ul>
+            </ul>
         </div>
 
         <div class="navi-center">
@@ -24,6 +24,7 @@
         </div>
 
         <div class="navi-right">
+            <button onclick="" id="openMyOnTopWindow" >MemoMate v2</button>
           
         </div>
     </header>
@@ -34,9 +35,22 @@
                 <ul>
                     
                 </ul>
-            </div>     
+            </div> 
         </div> 
+
+        
+
     </main>   
+
+    <div id="myOnTopWindow" class="onTopWindow">
+        <div class="onTopWindow-content">
+            <span class="close">&times;</span>
+            <h3>Tady bude nadpis</h3>
+            <textarea id="userText" rows="4" cols="50"></textarea>
+            <br>
+            <button id="submitText">Odeslat</button>
+        </div>
+    </div>
     
     <script src="./script/main.js"></script>
     
