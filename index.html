@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navigation.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>MemoMate</title>
 
     
@@ -44,10 +49,11 @@
     </main>   
 
     <div id="myOnTopWindow" class="onTopWindow">
-        <div class="onTopWindow-content">
+        <!-- <div class="onTopWindow-content"> -->
+        <div class="animate__animated animate__fadeIn">
             <span class="close">&times;</span>
             <h3><input type="text" id="userTitle" placeholder="Tady je nadpis"></h3>
-            <textarea id="userText" placeholder="tady se můžeš rozepsat"></textarea>
+            <textarea id="userText" placeholder="Tady se můžeš rozepsat"></textarea>
             <br>
             <button id="submitText">Odeslat</button>
         </div>
