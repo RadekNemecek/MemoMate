@@ -77,7 +77,7 @@ const onTopWindow = document.getElementById('myOnTopWindow');
 const openWindowBtn = document.getElementById('openMyOnTopWindow');
 const closeWindowBtn = document.getElementsByClassName('close')[0];
 const submitTextBtn = document.getElementById('submitText');
-let userTextValue = ''; //později bude obsahovat zadaný text uživatele
+let content = ''; //později bude obsahovat zadaný text uživatele
  
 // Otevrit okno po kliknuti na button
 openWindowBtn.onclick = function(){
@@ -99,12 +99,15 @@ window.onclick = function(event) {
 // zpracovani textu 
 submitTextBtn.onclick = function(){
     const userText = document.getElementById('userText').value;
-    userTextValue = userText;
+    content = userText;
+    let title = ('Toto bude nadpis');
 
-    console.log('text od uživatele', userTextValue);
+    console.log('text od uživatele', content);
 
     document.getElementById("userText").value = ""; //promaže pole input
     onTopWindow.style.display = 'none';
+
+    createNewCardByInput(title, content);
 }
 
 
