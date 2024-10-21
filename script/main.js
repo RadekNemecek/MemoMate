@@ -37,7 +37,7 @@ function createNewCard(){
 }
 
 // vytvoreni nove karty pomocí input pole
-function createNewCardByInput(title, content){
+function createNewCardByButton(title, content){
     
     // vytvorit novy HTML element (li)
     let newCard = document.createElement('li');
@@ -78,6 +78,7 @@ const openWindowBtn = document.getElementById('openMyOnTopWindow');
 const closeWindowBtn = document.getElementsByClassName('close')[0];
 const submitTextBtn = document.getElementById('submitText');
 let content = ''; //později bude obsahovat zadaný text uživatele
+let title = ''; //později bude obsahovat zadaný text uživatele
  
 // Otevrit okno po kliknuti na button
 openWindowBtn.onclick = function(){
@@ -98,16 +99,20 @@ window.onclick = function(event) {
 
 // zpracovani textu 
 submitTextBtn.onclick = function(){
+
+    // ziskani textu z nadpisu (title)
+    const userTitle = document.getElementById('userTitle').value;
+    title = userTitle;
+    
+    // ziskani textu z textového pole (content)
     const userText = document.getElementById('userText').value;
-    content = userText;
-    let title = ('Toto bude nadpis');
+    content = userText.replace(/\n/g, "<br>"); //zachová formátoní textu s enterem
 
-    console.log('text od uživatele', content);
+    document.getElementById("userTitle").value = ""; //promaže pole title
+    document.getElementById("userText").value = ""; //promaže pole content
+    onTopWindow.style.display = 'none'; //skryje onTopWindow
 
-    document.getElementById("userText").value = ""; //promaže pole input
-    onTopWindow.style.display = 'none';
-
-    createNewCardByInput(title, content);
+    createNewCardByButton(title, content);
 }
 
 

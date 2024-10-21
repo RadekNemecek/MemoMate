@@ -20,11 +20,12 @@
         </div>
 
         <div class="navi-center">
-            <button onclick="createNewCard()">Memo <img src="./img/notes.png" alt="notes"> Mate</button>
+            <button onclick="" id="openMyOnTopWindow">Memo <img src="./img/notes.png" alt="notes"> Mate</button>
+            <!-- <button onclick="createNewCard()">Memo <img src="./img/notes.png" alt="notes"> Mate</button> -->
         </div>
 
         <div class="navi-right">
-            <button onclick="" id="openMyOnTopWindow" >MemoMate v2</button>
+            <!-- <button onclick="" id="openMyOnTopWindow" >MemoMate v2</button> -->
           
         </div>
     </header>
@@ -45,8 +46,8 @@
     <div id="myOnTopWindow" class="onTopWindow">
         <div class="onTopWindow-content">
             <span class="close">&times;</span>
-            <h3>Tady bude nadpis</h3>
-            <textarea id="userText" rows="4" cols="50"></textarea>
+            <h3><input type="text" id="userTitle" placeholder="Tady je nadpis"></h3>
+            <textarea id="userText" rows="4" cols="50" placeholder="tady se můžeš rozepsat"></textarea>
             <br>
             <button id="submitText">Odeslat</button>
         </div>
