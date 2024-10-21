@@ -108,6 +108,11 @@ submitTextBtn.onclick = function(){
     const userText = document.getElementById('userText').value;
     content = userText.replace(/\n/g, "<br>"); //zachová formátoní textu s enterem
 
+    // kontrola, jestli je zadan nadpis, pokud ne, dopln text
+    if (!title){
+        title = 'Poznámka'
+     };
+
     document.getElementById("userTitle").value = ""; //promaže pole title
     document.getElementById("userText").value = ""; //promaže pole content
     onTopWindow.style.display = 'none'; //skryje onTopWindow
