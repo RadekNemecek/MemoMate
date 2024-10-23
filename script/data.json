@@ -1,42 +1,47 @@
 [
 	{
 		"id": "c76a2922-ba4c-4278-baab-44defb631236",
-		"name": "Aberto",
-		"description": "Opens locked doors"
+		"dateOfCreated": "22.10.2024",
+		"dateOfCompletion": "23.10.2024", 
+		"creatorName": "Radek",
+		"copleted": "false",
+		"title": "Aberto",
+		"content": "Opens locked doors"
 	},
 	{
-		"id": "06485500-d023-4799-93fd-77f2c3341aa3",
-		"name": "Accio",
-		"description": "Summons objects"
+		"id": "c76a2922-ba4c-4278-baab-44defb631236",
+		"dateOfCreated": "22.10.2024",
+		"dateOfCompletion": "23.10.2024", 
+		"creatorName": "Radek",
+		"copleted": "false",
+		"title": "Accio",
+		"content": "Summons objects"
 	},
 	{
-		"id": "acbc0ae1-12e1-4813-b51e-09d22de40475",
-		"name": "Aguamenti",
-		"description": "Summons water"
+		"id": "c76a2922-ba4c-4278-baab-44defb631236",
+		"dateOfCreated": "22.10.2024",
+		"dateOfCompletion": "23.10.2024", 
+		"creatorName": "Radek",
+		"copleted": "false",
+		"title": "Alohomora",
+		"content": "Unlocks objects,Unlocks objects,Unlocks objects,Unlocks objects,Unlocks objects"
 	},
 	{
-		"id": "c9d2f389-a419-4f7e-8d3d-254959638019",
-		"name": "Alohomora",
-		"description": "Unlocks objects"
+		"id": "c76a2922-ba4c-4278-baab-44defb631236",
+		"dateOfCreated": "22.10.2024",
+		"dateOfCompletion": "23.10.2024", 
+		"creatorName": "Radek",
+		"copleted": "false",
+		"title": "Apparate",
+		"content": "A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)"
 	},
 	{
-		"id": "018429a5-15d5-41af-bf8f-98a966733d77",
-		"name": "Anapneo",
-		"description": "Clears someone's airway"
-	},
-	{
-		"id": "c828685c-52d2-466d-bcc6-fbcd8376cfb5",
-		"name": "Aparecium",
-		"description": "Reveals secret written messages"
-	},
-	{
-		"id": "7fdd393c-2608-4ef3-9fd0-f691ad6f8b88",
-		"name": "Apparate",
-		"description": "A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)"
-	},
-	{
-		"id": "73886d47-2808-4861-ae40-956f4cb56272",
-		"name": "Ascendio",
-		"description": "Propells someone into the air"
+		"id": "c76a2922-ba4c-4278-baab-44defb631236",
+		"dateOfCreated": "22.10.2024",
+		"dateOfCompletion": "23.10.2024", 
+		"creatorName": "Radek",
+		"copleted": "false",
+		"title": "Ascendio",
+		"content": "Propells someone into the air"
 	}
 ]
