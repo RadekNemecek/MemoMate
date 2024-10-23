@@ -65,12 +65,14 @@ function createNewCardByButton(title, content){
     cardContainer.appendChild(newCard);
 }
 
-
-
-
 // --------------------------------------------
-//               Prostor pro testy
+//                  HLAVNI KOD
 // --------------------------------------------
+
+// najit rodice, do kterého budu pridavat HTML
+const cardContainer = document.querySelector('.cards ul');
+
+// -----------vytvoreni nove karty-------------
 
 // Ziskani prvku z HTML
 const onTopWindow = document.getElementById('myOnTopWindow');
@@ -86,11 +88,6 @@ openWindowBtn.onclick = function(){
 
     document.getElementById('userTitle').focus(); //přenese kurzor do Title
     }
-
-// Zavreni okna po kliknuti na "x"
-// closeWindowBtn.onclick = function(){
-//     onTopWindow.style.display = 'none';
-// }
 
 // Zavreni okna pri kliknuti mimo obsah
 window.onclick = function(event) {
@@ -122,14 +119,22 @@ submitTextBtn.onclick = function(){
     createNewCardByButton(title, content);
 }
 
+// --------nacteni dat z data.json-------------
+fetch('./script/data.json')
+    .then(response => response.json())
+    .then(data => {
+       data.forEach(card => {
+        createNewCardByButton(card.title, card.content)
+       });
+    });
 
 
 // --------------------------------------------
-//                  HLAVNI KOD
+//               Prostor pro testy
 // --------------------------------------------
 
-// najit rodice, do kterého budu pridavat HTML
-const cardContainer = document.querySelector('.cards ul');
+
+
 
 
 // --------------------------------------------
@@ -148,3 +153,8 @@ document.getElementById("inputTitle").addEventListener("keydown", function(event
     }
 
 }); */
+
+// Zavreni okna po kliknuti na "x"
+// closeWindowBtn.onclick = function(){
+//     onTopWindow.style.display = 'none';
+// }

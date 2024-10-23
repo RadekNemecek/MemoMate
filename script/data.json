@@ -41,6 +41,15 @@
 		"dateOfCompletion": "23.10.2024", 
 		"creatorName": "Radek",
 		"copleted": "false",
+		"title": "Apparate",
+		"content": "A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)"
+	},
+	{
+		"id": "c76a2922-ba4c-4278-baab-44defb631236",
+		"dateOfCreated": "22.10.2024",
+		"dateOfCompletion": "23.10.2024", 
+		"creatorName": "Radek",
+		"copleted": "false",
 		"title": "Ascendio",
 		"content": "Propells someone into the air"
 	}
