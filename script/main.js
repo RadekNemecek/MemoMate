@@ -36,7 +36,7 @@ function createNewCard(){
 
 }
 
-// vytvoreni nove karty pomocí input pole
+// vytvoreni nove karty a pripnutí na stranku bez db
 function createNewCardByButton(title, content){
     
     // vytvorit novy HTML element (li)

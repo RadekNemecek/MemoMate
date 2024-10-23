@@ -98,27 +98,31 @@ body {
 
 .dark-mode {
     background-image: linear-gradient(
-        to left,
-        #D8F0F2,
-        #C1D6D9
+        to right,
+        #8097c5,
+        #C2D2F2
     ) ;
 }
 
 .dark-mode .controls button{
-    background-color: #A69286;
+    background-color: #60BF78;
 }
 
 .dark-mode .controls button:hover{
-    background-color: rgb(72, 255, 0);
+    background-color: #2196F3;
 }
 
 .dark-mode .cards li {
-    background-color: #697F8C;
+    background-color: #203359;
     color: #ddf2ff;
 }
 
 .dark-mode .cards li:hover{
-    background-color: #5d717c;
+    background-color: #39455e;
+}
+
+.dark-mode .navi button:hover{
+    background: #60BF78;
 }
 
 
@@ -173,3 +177,4 @@ body {
   input:checked + .slider:before {
     transform: translateX(26px);
   }
+
