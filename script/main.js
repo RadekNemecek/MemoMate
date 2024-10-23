@@ -128,22 +128,23 @@ fetch('./script/data.json')
        });
     });
 
-// prepnuti css stylu
-const button = document.getElementById('styleSwitcher');
+// -------------uprava css pomoci prepinace-------------------
+const switcher = document.getElementById('themeSwitcher');
 
-// Načti stav z localStorage při načtení stránky
+// Načtení stavu z localStorage při načtení stránky
 if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
+    switcher.checked = true; // Nastaví přepínač jako zaškrtnutý
 }
 
-button.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-
-    // Ulož stav do localStorage
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('dark-mode', 'enabled');
+// Přidání event listeneru pro změnu přepínače
+switcher.addEventListener('change', function() {
+    if (this.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('dark-mode', 'enabled'); // Uloží stav do localStorage
     } else {
-        localStorage.setItem('dark-mode', 'disabled');
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('dark-mode', 'disabled'); // Uloží stav do localStorage
     }
 });
 
@@ -151,7 +152,6 @@ button.addEventListener('click', function() {
 // --------------------------------------------
 //               Prostor pro testy
 // --------------------------------------------
-
 
 
 
