@@ -12,8 +12,9 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    padding: 0px;
 }
+    
 
 .cards li {
     background-color: #ff5b8f;
@@ -26,11 +27,9 @@ body {
     min-width: 10rem;
     height: fit-content;
     word-wrap: break-word;
-   
-
     border: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
+} 
 
 .cards li:hover {
     background-color: #f83472;
@@ -50,9 +49,7 @@ body {
 .controls button {
     width: 2rem;
     height: 1rem;
-
     border: 1px solid rgba(0, 0, 0, 0.4);
-
     background: #ff0f5b;
     border-radius: 1rem;
 }
@@ -92,6 +89,6 @@ body {
 
     .cards li {
         max-width: none;
-        width: 80%; /* Každý li zabírá 100% šířky rodiče ul */
+        width: 80%; 
     }
 }
