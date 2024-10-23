@@ -128,12 +128,7 @@ fetch('./script/data.json')
        });
     });
 
-
-// --------------------------------------------
-//               Prostor pro testy
-// --------------------------------------------
-
-
+// prepnuti css stylu
 const button = document.getElementById('styleSwitcher');
 
 // Načti stav z localStorage při načtení stránky
@@ -151,6 +146,11 @@ button.addEventListener('click', function() {
         localStorage.setItem('dark-mode', 'disabled');
     }
 });
+
+
+// --------------------------------------------
+//               Prostor pro testy
+// --------------------------------------------
 
 
 
